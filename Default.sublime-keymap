@@ -1,0 +1,3 @@
+[
+	{ "keys": ["ctrl+super+m"], "command": "git_status", "args": {}, "context": [ {"key": "git_status"} ] }
+]
