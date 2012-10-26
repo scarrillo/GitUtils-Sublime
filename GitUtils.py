@@ -1,6 +1,6 @@
 '''
 # Author: shawn.carrillo+sublime@gmail.com
-# Source: https://github.com/scarrillo/Jeeves-Sublime
+# Source: https://github.com/scarrillo/GitUtils-Sublime
 # Version 1.0
 # Date: 2012.10.25
 ''' 
