@@ -4,7 +4,7 @@
 # Version 1.0
 # Date: 2012.10.25
 ''' 
-import sublime, sublime_plugin, os, subprocess, thread, time, tail, threading
+import sublime, sublime_plugin, os
 
 class GitUtils(sublime_plugin.EventListener):
 	def on_query_context(self, view, key, operator, operand, match_all):
@@ -22,7 +22,7 @@ class GitUtils(sublime_plugin.EventListener):
 			folderName = folder[folder.rfind('/')+1:]
 			print "Git Status: "+folderName
 			# Print git status
-			log = os.popen("git --git-dir="+str(folder)+"/.git --work-tree="+str(folder)+ " status").readlines()
+			log = os.popen("git --git-dir="+ folder +"/.git --work-tree="+ folder + " status").readlines()
 			# Print current branch
 			#log = os.popen("git --git-dir="+str(folder)+"/.git --work-tree="+str(folder)+ " branch|grep \\*").readlines()
 			if len(log) != 0:
